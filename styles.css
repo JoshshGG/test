@@ -1,0 +1,16 @@
+/* styles.css */
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.highlight-image {
+    display: block;
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.highlight-image:hover {
+    filter: brightness(1.2) contrast(1.2); /* Makes the image appear brighter */
+    transform: scale(1.05); /* Slight zoom effect */
+}
