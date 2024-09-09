@@ -1,29 +1,20 @@
-/* styles.css */
+/* <length> */
+width: 300px;
+width: 25em;
 
-body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f0f0f0;
-}
+/* <percentage> */
+width: 75%;
 
-.animated-title {
-    font-size: 2rem;
-    color: #333;
-    opacity: 0;
-    animation: slideIn 2s forwards;
-}
+/* 키워드 */
+width: 25em border-box;
+width: 75% content-box;
+width: max-content;
+width: min-content;
+width: available;
+width: fit-content(20em);
+width: auto;
 
-@keyframes slideIn {
-    from {
-        transform: translateY(100px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
+/* 전역 값 */
+width: inherit;
+width: initial;
+width: unset;
