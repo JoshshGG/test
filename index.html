@@ -7,7 +7,9 @@
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, sans-serif}
 .w3-row-padding img {margin-bottom: 12px}
@@ -36,28 +38,35 @@ h1 {letter-spacing: 10px}
   </div>
 </header>
 
-<div id="content"></div>
-</div>
-
 <div class="image-container">
-  <img src="Yuumi_0.jpg" alt="Highlighted Image" class="highlight-image">
-  <img src="Yuumi_0.jpg" alt="Highlighted Image" class="highlight-image">
+  <img src="C:\Users\c\Downloads\Yuumi_0.jpg" alt="Highlighted Image" class="highlight-image clickableImage">
+  <img src="C:\Users\c\Downloads\Yuumi_0.jpg" alt="Highlighted Image" class="highlight-image clickableImage">
 </div>
 
-<div class="image-container"></div>
-  <img src="Yuumi_0.jpg" alt="Highlighted Image" class="highlight-image">
-  <img src="Yuumi_0.jpg" alt="Highlighted Image" class="highlight-image">
-</div>
+<audio id="audio" src="C:\Users\c\Desktop\Developing\Sound Effects\Beep - alarm.wav" preload="auto"></audio>
 
+
+<script>
+  // Get all elements with the class "clickableImage"
+  var images = document.getElementsByClassName("clickableImage");
+
+  // Loop through each image and add a click event listener
+  for (var i = 0; i < images.length; i++) {
+    images[i].addEventListener("click", function() {
+      var audio = document.getElementById("audio");
+      audio.play();
+    });
+  }
+</script>
 
 
 <!-- Photo Grid -->
 <div class="w3-row-padding w3-grayscale" style="margin-bottom:128px"></div>
   <div class="w3-half">
     <div class="image-container">
-      <img src="Yuumi_0.jpg" style="width:100%">
-      <img src="Yuumi_0.jpg" style="width:100%">
-      <img src="Yuumi_0.jpg" style="width:100%">
+      <img src="C:\Users\c\Downloads\Yuumi_0.jpg" style="width:100%">
+      <img src="C:\Users\c\Downloads\Yuumi_0.jpg" style="width:100%">
+      <img src="C:\Users\c\Downloads\Yuumi_0.jpg" style="width:100%">
       <img src="C:\Users\c\Downloads\Yuumi_0.jpg" style="width:100%">
       <img src="C:\Users\c\Downloads\Yuumi_0.jpg" style="width:100%">
       <img src="C:\Users\c\Downloads\Yuumi_0.jpg" style="width:100%">
@@ -67,9 +76,9 @@ h1 {letter-spacing: 10px}
 
 <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
   <div class="w3-half">
-    <img src="Yuumi_0.jpg" style="width:100%">
-    <img src="Yuumi_0.jpg" style="width:100%">
-    <img src="Yuumi_0.jpg" style="width:100%">
+    <img src="C:\Users\c\Downloads\Yuumi_0.jpg" style="width:100%">
+    <img src="C:\Users\c\Downloads\Yuumi_0.jpg" style="width:100%">
+    <img src="C:\Users\c\Downloads\Yuumi_0.jpg" style="width:100%">
     <img src="C:\Users\c\Downloads\Yuumi_0.jpg" style="width:100%">
     <img src="C:\Users\c\Downloads\Yuumi_0.jpg" style="width:100%">
     <img src="C:\Users\c\Downloads\Yuumi_0.jpg" style="width:100%">
@@ -84,9 +93,23 @@ h1 {letter-spacing: 10px}
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large"> 
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa-brands fa-discord"></i>
+  <a href="https://www.instagram.com/josh_joshsh/" target="_blank" class="social-icon">
+    <i class="fab fa-instagram w3-hover-opacity"></i>
+  </a>
+
+  <a href="https://discord.gg/v9n5YA6E" target="_blank" class="social-icon">
+    <i class="fab fa-discord w3-hover-opacity"></i>
+    
+  </a>
 </footer>
+
+<style>
+  .social-icon{
+    margin: 0 3px;
+    text-decoration: none;
+  }
+</style>
+
 
 </body>
 </html>
